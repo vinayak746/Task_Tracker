@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.3s forwards;
+  }
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cdcdcd;
+  @apply rounded-xl ;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  
+  @apply rounded-xl bg-gray-600;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400
+}
